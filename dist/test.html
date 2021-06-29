@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>*{padding:0;margin:0;box-sizing: border-box;}
+        *::after,*::before{
+            box-sizing:border-box;
+        }
+        #style{
+            display:none;
+        }
+        #html{
+            width:100%;
+            height:50vh;
+            position: fixed;
+            top:0;
+            left:0;
+            border: 1px solid red;
+            overflow: hidden;
+        }
+        .wrapper{
+            position:fixed;
+            left:calc(50% - 20px);
+            bottom:0;
+            width: 100%;
+            height:50vh;
+        }
+        @media (max-width:500px){
+            .wrapper{
+                left: 100px;
+            }
+
+        }
+        #html::-webkit-scrollbar{
+            display:none;
+        }
+        #buttons{
+          position: fixed;
+          top:0;
+          right:0;
+          display:flex;
+          flex-direction: column;
+          padding: 10px;
+        }
+        #buttons>button{
+            padding: 10px;
+            margin-bottom: 10px;
+            border:none;
+            border-radius:4px;
+            background-color: aqua;
+            transition: all 250ms;
+        }
+        
+        #buttons > button:hover{
+            transform:scale(1.2,1.2);
+        }</style>
+</head>
+<body>
+    <div id="style"></div>
+    <div id="html"></div>
+    <div id="buttons">
+        <button id="btnSpend">暂停</button>
+        <button id="btnPlay">播放</button>
+        <button id="btnSlow">慢速</button>
+        <button id="btnNormal">中速</button>
+        <button id="btnFast">高速</button>
+    </div>
+    <div class="wrapper">
+        <div class="dog">
+            <div class="dog-head">
+                <div class="dog-ears ears-left"></div>
+                <div class="dog-ears ears-right"></div>
+                <div class="dog-eyes">
+
+                </div>
+                <div class="dog-mouth">
+                    <dog class="dog-nose"></dog>
+                    <div class="dog-tongue"></div>
+                </div>
+            </div>
+            <div class="dog-tail"></div>
+            <div class="dog-body">
+                <div class="dog-foot"></div>
+            </div>
+            <div class="ball"></div>
+        </div>
+    </div>
+    <script src="/main.1f19ae8e.js"></script>
+</body>
+</html>
