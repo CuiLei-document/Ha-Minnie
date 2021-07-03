@@ -38,7 +38,6 @@ body,html{
         transform: rotate(0deg)
     }
 }
-
 .dog .dog-head{
     /* border: 1px solid red; */
     width:100px;
@@ -51,6 +50,7 @@ body,html{
     border-radius:50%;
     animation: head 6s linear infinite;
 } 
+/*准备狗狗的红色面罩*/
 .dog-head::before,
 .dog-head::after{
     content:'';
@@ -70,6 +70,7 @@ body,html{
     right: -7px;
     transform: rotate(-46deg);
 }
+/*狗狗的耳朵*/
 .dog-ears{
     width: 80px;
     height: 50px;
@@ -100,7 +101,7 @@ body,html{
     transform: rotate( -22deg);
 }
 
-
+/*狗狗的嘴巴*/
 .dog-mouth{
     width:60px;
     height:35px;
@@ -122,6 +123,7 @@ body,html{
     z-index:10;
     border-radius: 20px;
 }
+/*狗狗的鼻子*/
 .dog-mouth .dog-nose{
     width:16px;
     height:10px;
@@ -164,6 +166,7 @@ body,html{
     border-radius: 0 0 10px 10px;
     animation: tongue 4s linear infinite;
 }
+/*狗狗的眼睛*/
 .dog-eyes{
     /* border: 1px solid red; */
     width: 10px;
@@ -198,7 +201,7 @@ body,html{
     background-color: #fffeff;
     box-shadow: 34px 0 0 #fffeff;
 }
-
+/*狗狗的身体*/
 .dog-body{
     width:  54px;
     height: 60px;
@@ -228,6 +231,7 @@ body,html{
     background-color: #d58b4e;
     border-radius: 100px 100px 0 0;
 }
+/*狗狗的小脚*/
 .dog-foot{
     width: 20px;
     height: 13px;
@@ -247,6 +251,7 @@ body,html{
         transform: rotate(-57deg)
     }
 }
+/*狗狗的尾巴*/
 .dog-tail{
     width: 10px;
     height: 50px;
@@ -285,6 +290,7 @@ body,html{
         transform: translate(0)
     }
 }
+/*红色球*/
 .ball{
     width: 30px;
     height: 30px;
